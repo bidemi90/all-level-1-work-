@@ -1,0 +1,679 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.three,
+.two,
+.one {
+
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.conforbuttons {
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.onebutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    display: block;
+    margin: 5px;
+}
+
+
+
+
+.twobutton {
+  
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.threebutton *,
+.twobutton * {
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.onebutton:hover,
+.twobutton:hover {
+    background-color: rgba(255, 255, 255, 0.163);
+}
+
+.threebutton {
+    background-color: rgb(26, 140, 217);
+    border-radius: 50px;
+    
+    margin: 5px;
+}
+
+
+
+.conforbuttons2 {
+    padding: 0;
+    border-radius: 50px;
+    margin-top: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    position: relative;
+}
+
+.conforbuttons22 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    margin: 0;
+
+}
+
+.conforbuttons2:hover {
+    background-color: rgba(131, 131, 131, 0.527);
+}
+
+.conforbuttons2 * {
+    margin: 5px;
+
+}
+
+.conforbuttons2 img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+}
+
+.conforbuttons2hover {
+    position: absolute;
+    background-color: black;
+    box-shadow: 1px 1px 5px white;
+    padding: 5px;
+    top: -100%;
+    border-radius: 10px;
+    display: none;
+}
+
+.conforbuttons2hover div:hover {
+    background-color: rgba(255, 255, 255, 0.196);
+}
+
+.conforbuttons2:hover .conforbuttons2hover {
+    display: block;
+}
+
+
+
+
+.moreee {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    bottom: 30%;
+    box-shadow: 1px 1px 5px white;
+    z-index: 99;
+    height: fit-content;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.moreee::-webkit-scrollbar {
+    display: none;
+}
+
+.moreee button {
+    text-align: left;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+.moreee button:hover {
+    background-color: rgba(255, 255, 255, 0.186);
+}
+
+.accordion {
+    border: none;
+}
+
+.accordion * {
+    background-color: black;
+    color: white;
+}
+
+.accordion span {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.accordion-body button {
+    text-align: left;
+}
+
+
+.moreee {
+    display: none;
+}
+
+.morebut:focus-within .moreee {
+    display: block;
+}
+
+/* 3rd bar */
+.three {
+    overflow: auto;
+
+}
+
+.three::-webkit-scrollbar {
+    display: none;
+}
+
+.housingsearchbar {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    background-color: black;
+    padding: 10px;
+}
+
+.searchbar {
+    border: 1px solid white;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    color: white;
+
+    background-color: black;
+    margin-left: 15px;
+
+}
+
+.searchbar input {
+    width: 90%;
+    border: none;
+    background-color: black;
+    outline: none;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    bottom: -205%;
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 5px white;
+
+}
+
+.searchbar:focus-within {
+    border: 1px solid rgb(25, 133, 205);
+}
+
+.searchbar:focus-within .dropdown {
+    display: block;
+}
+
+.searchcontent button * {
+    margin: 0;
+}
+
+.searchcontent {
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgba(22, 24, 28);
+    color: white;
+    padding: 15px 0;
+    margin-left: 20px;
+}
+
+
+.searchcontent button {
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.searchcontent button:hover {
+    background-color: rgba(255, 255, 255, 0.053);
+}
+
+.clicking {
+    position: relative;
+}
+
+.click:hover {
+    background-color: rgb(133, 133, 133);
+    border-radius: 50px;
+}
+
+.fortheclick {
+    display: none;
+    position: absolute;
+    height: fit-content;
+    width: 300px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px white;
+    right: 1%;
+    border-radius: 10px;
+}
+
+.fortheclick div:hover {
+    background-color: rgb(126, 126, 126);
+}
+
+.clicking:hover .fortheclick {
+    display: block;
+    background-color: rgb(0, 0, 0);
+}
+
+.whotofollow button * {
+    margin: 0;
+}
+
+.whotofollow {
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgba(22, 24, 28);
+    color: white;
+    padding: 15px 0;
+    margin-left: 20px;
+}
+
+
+.whotofollow button {
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.whotofollow button img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.whotofollow button:hover {
+    background-color: rgba(255, 255, 255, 0.053);
+}
+
+.follow {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+
+}
+
+.links {
+    font-size: 12px;
+}
+
+.links a {
+    color: rgb(121, 125, 128);
+}
+
+/* 2nd bar */
+.two {
+    overflow: auto;
+    border-left: 2px solid rgb(121, 125, 128);
+    border-right: 2px solid rgb(121, 125, 128);
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.two::-webkit-scrollbar {
+    display: none;
+}
+
+/* top bar */
+.hometop {
+    color: white;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    height: 10%;
+    z-index: 99;
+
+}
+
+/* end of top bar */
+
+/* content of two */
+
+.profileimgdiv1 {
+    height: 20%;
+    background-color: rgb(98, 93, 93);
+}
+
+.profileimgdiv2 {
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.profileimgdiv2 * {
+    margin: 0;
+}
+
+.profileimgdiv2 a {
+    color: rgb(121, 125, 128);
+    text-decoration: none;
+}
+
+.profileimgdiv2 p {
+    color: rgb(121, 125, 128);
+}
+
+.moverupinprofile {
+    height: 50%;
+    width: 25%;
+    border-radius: 50%;
+    border: 4px solid black;
+    position: absolute;
+    top: -25%;
+    left: 5%;
+}
+
+.buteditinprofile {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    margin-left: 70%;
+    margin-top: 5%;
+}
+
+.secconinpro {
+    position: relative;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.butinyou {
+    background-color: rgb(0, 0, 0);
+   width: 25%;
+   height: 60px;
+    color: white;
+
+}
+
+.butinyou:focus {
+    background-color: rgb(66, 66, 66);
+    border-bottom: 2px solid rgb(25, 133, 205);
+}
+
+.inyou,
+.inyou1 {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    left: 0;
+    top: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.inyou::-webkit-scrollbar,
+.inyou1::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.inyou1 {
+    display: none;
+}
+
+.butinyou:focus .inyou,
+.butinyou:focus .inyou1 {
+    display: block;
+}
+
+
+
+
+.post {
+    display: flex;
+    width: 100%;
+
+    border-bottom: 1px solid rgb(121, 125, 128);
+    padding: 20px 0px;
+}
+
+.postpro {
+    width: 15%;
+    background-color: rgba(255, 0, 0, 0);
+
+
+}
+
+.proimg {
+    height: 10%;
+    width: 80%;
+    border-radius: 70%;
+}
+
+.postcontent * {
+    margin: 0;
+    color: white;
+    font-size: 15px;
+}
+
+.postcontent {
+    width: 85%;
+    height: 100%;
+
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.theclickofpro {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.postimg {
+    height: 80%;
+}
+
+.postimg img {
+    border-radius: 15px;
+}
+
+.postfooter div {
+    width: 80%;
+    font-size: xx-small;
+    height: fit-content;
+}
+
+.downiconofpost {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.odr * {
+    color: rgb(0, 186, 124);
+}
+
+.odrr * {
+    color: rgb(249, 24, 128);
+}
+
+
+
+/* footer */
+.footer1 {
+    width: 450px;
+
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    color: white;
+    box-shadow: 1px 1px 5px white;
+    right: 5%;
+
+}
+
+.headerfooter {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.itwilldoit {
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.itwilldoit:hover {
+    background-color: rgba(255, 255, 255, 0.101);
+}
+
+.contentoffooter1 {
+    display: none;
+    height: 400px;
+}
+
+.footer1:focus-within .contentoffooter1 {
+    display: block;
+    transition: all linear 3s;
+}
+
+.contentoffooter1 * {
+    margin: 0;
+}
+
+.contentoffooter1 button {
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+
+}
+
+.contentoffooter1 button:hover {
+    background-color: rgba(255, 255, 255, 0.089);
+}
+
+.contentoffooter1 button div img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.footer2thebutton {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid rgb(133, 133, 133);
+}
+
+.footer2thebutton * {
+    color: white;
+}
+
+.footer2thebutton button {
+    background-color: black;
+    color: white;
+}
+
+.tee {
+    padding: 10px;
+    background-color: rgb(26, 140, 217);
+    color: white;
+    position: fixed;
+    bottom: 10%;
+    border-radius: 50px;
+    right: 5%;
+}

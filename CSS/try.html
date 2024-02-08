@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .ittop{
+            width: 100vw;
+            height: 100vh;
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.466);
+        }
+        .takeloding{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 20vw;
+            height: 20vw;
+            border-radius: 50%;
+            border: 2px solid green;
+            animation-name: loding;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transition: all linear 1s;
+        }
+        @keyframes loding {
+            50%{
+                scale: 1.5;
+            }
+            100%{
+                scale: 1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="ittop">
+        <div class="takeloding">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores dolore labore, iusto obcaecati ipsa est cum perferendis aspernatur dignissimos quam totam accusantium quae temporibus beatae aliquam facilis ut! Veniam.
+        </div>
+       </div>
+</body>
+</html>

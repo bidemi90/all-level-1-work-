@@ -1,0 +1,583 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.three,
+.two,
+.one {
+
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.conforbuttons {
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.onebutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    display: block;
+    margin: 5px;
+}
+
+
+
+
+.twobutton {
+    
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.threebutton *,
+.twobutton * {
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.onebutton:hover,
+.twobutton:hover {
+    background-color: rgba(255, 255, 255, 0.163);
+}
+
+.threebutton {
+    background-color: rgb(26, 140, 217);
+    border-radius: 50px;
+    
+    margin: 5px;
+}
+
+
+
+
+.conforbuttons2{
+    padding: 0;
+    border-radius: 50px;
+    margin-top: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    position: relative;
+}
+.conforbuttons22{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    margin: 0;
+
+}
+.conforbuttons2:hover{
+    background-color: rgba(131, 131, 131, 0.527);
+}
+.conforbuttons2 *{
+    margin: 5px;
+ 
+}
+.conforbuttons2 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+}
+.conforbuttons2hover{
+    position: absolute;
+    background-color: black;
+    box-shadow: 1px 1px 5px white;
+    padding: 5px;
+    top: -100%;
+    border-radius: 10px;
+    display: none;
+}
+.conforbuttons2hover div:hover{
+    background-color: rgba(255, 255, 255, 0.196);
+}
+.conforbuttons2:hover .conforbuttons2hover{
+    display: block;
+}
+
+
+
+
+.moreee{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+   bottom: 30%;
+   box-shadow: 1px 1px 5px white;
+   z-index: 99;
+   height: fit-content;
+   max-height: 600px;
+   overflow: auto;
+}
+.moreee::-webkit-scrollbar{
+   display: none;
+}
+.moreee button{
+    text-align: left;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+.moreee button:hover{
+    background-color: rgba(255, 255, 255, 0.186);
+}
+.accordion{
+    border: none;
+}
+.accordion *{
+    background-color: black;
+    color: white;
+}
+.accordion span{
+    background-color: rgba(255, 255, 255, 0);
+}
+.accordion-body button{
+text-align: left;
+}
+
+
+.moreee{
+    display: none;
+}
+.morebut:focus-within .moreee{
+    display: block;
+}
+
+
+/* 3rd bar */
+.three {
+    overflow: auto;
+
+}
+.three::-webkit-scrollbar{
+    display: none;
+}
+
+.housingsearchbar {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    background-color: black;
+    padding: 10px;
+}
+
+.searchbar {
+    border: 1px solid white;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    color: white;
+
+    background-color: black;
+    margin-left: 15px;
+
+}
+
+.searchbar input {
+    width: 90%;
+    border: none;
+    background-color: black;
+    outline: none;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    bottom: -205%;
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 5px white;
+
+}
+
+.searchbar:focus-within {
+    border: 1px solid rgb(25, 133, 205);
+}
+
+.searchbar:focus-within .dropdown {
+    display: block;
+}
+
+.searchcontent button * {
+    margin: 0;
+}
+
+.searchcontent {
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgba(22, 24, 28);
+    color: white;
+    padding: 15px 0;
+    margin-left: 20px;
+}
+
+
+.searchcontent button {
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.searchcontent button:hover {
+    background-color: rgba(255, 255, 255, 0.053);
+}
+.clicking{
+    position: relative;
+}
+.click:hover {
+    background-color: rgb(133, 133, 133);
+    border-radius: 50px;
+}
+
+.fortheclick {
+    display: none;
+    position: absolute;
+    height: fit-content;
+    width: 300px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px white;
+    right: 1%;
+    border-radius: 10px;
+}
+.fortheclick div:hover{
+    background-color: rgb(126, 126, 126);
+}
+
+.clicking:hover .fortheclick {
+    display: block;
+    background-color: rgb(0, 0, 0);
+}
+
+.whotofollow button * {
+    margin: 0;
+}
+
+.whotofollow {
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgba(22, 24, 28);
+    color: white;
+    padding: 15px 0;
+    margin-left: 20px;
+}
+
+
+.whotofollow button {
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.whotofollow button img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.whotofollow button:hover {
+    background-color: rgba(255, 255, 255, 0.053);
+}
+
+.follow {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+
+}
+
+.links {
+    font-size: 12px;
+}
+
+.links a {
+    color: rgb(121, 125, 128);
+}
+
+/* 2nd bar */
+.two {
+    overflow: auto;
+    border-left: 2px solid rgb(121, 125, 128);
+    border-right: 2px solid rgb(121, 125, 128);
+    background-color: rgb(0, 0, 0);
+}
+
+.two::-webkit-scrollbar {
+    display: none;
+}
+
+/* top bar */
+.hometop {
+    color: white;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    height: 5%;
+    
+}
+
+/* end of top bar */
+
+/* content of two */
+
+.noticontent{
+    height: 95%;
+    background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+   
+}
+
+.noticontent button{
+    width: 32%;
+    margin: 0px;
+    height: 5%;
+}
+
+.but11content{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 5%;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    border-top: 1px solid rgb(133, 133, 133);
+    height: 95%;
+    overflow: auto;
+}
+.but111content,
+.but1111content{
+   
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 5%;
+    display: none;
+    border-top: 1px solid rgb(133, 133, 133);
+    height: 95%;
+    overflow: auto;
+}
+.but11content::-webkit-scrollbar,
+.but111content::-webkit-scrollbar,
+.but1111content::-webkit-scrollbar{
+    display: none;
+}
+.but111content{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.but1111content{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.noticontent button{
+    background-color: black;
+    color: white;
+
+}
+.noticontent button:focus{
+    border-bottom:  3px solid rgb(25, 133, 205);
+    background-color: rgb(73, 73, 73);
+}
+
+.noticontent button:focus div{
+    display: block;
+}
+.but11content aside{
+    border-bottom: 1px solid rgb(121, 125, 128);
+}
+.itside{
+    width: 15%;
+    padding: 10px;
+    color: rgb(25, 133, 205);
+}
+.itside2{
+    width: 15%;
+    padding: 10px;
+    color: rgb(160, 25, 205);
+}
+.itside3{
+    width: 15%;
+    padding: 10px;
+    color: rgb(25, 205, 79);
+}
+.itsidecon{
+    width: 85%;
+    text-align: left;
+}
+.itsidecon img{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* profile */
+
+
+
+/* end of post */
+
+
+/* footer */
+.footer1{
+    width: 450px;
+    
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    color: white;
+    box-shadow: 1px 1px 5px white;
+    right: 5%;
+   
+}
+.headerfooter{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.itwilldoit{
+    padding: 5px;
+   border-radius: 50px;
+   background-color: rgba(255, 255, 255, 0);
+   color: white;
+}
+.itwilldoit:hover{
+    background-color: rgba(255, 255, 255, 0.101);
+}
+.contentoffooter1{
+display: none;
+height: 400px;
+}
+.footer1:focus-within .contentoffooter1{
+    display: block;
+    transition: all linear 3s;
+}
+
+.contentoffooter1 *{
+    margin: 0;
+}
+.contentoffooter1 button{
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+
+}
+.contentoffooter1 button:hover{
+    background-color: rgba(255, 255, 255, 0.089);
+}
+.contentoffooter1 button div img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+.footer2thebutton{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid rgb(133, 133, 133);
+}
+.footer2thebutton *{
+    color: white;
+}
+.footer2thebutton button{
+    background-color: black;
+    color: white;
+}
+.tee{
+    padding: 10px;
+    background-color: rgb(26, 140, 217);
+    color: white;
+    position: fixed;
+    bottom: 10%;
+    border-radius: 50px;
+    right: 5%;
+}
+
